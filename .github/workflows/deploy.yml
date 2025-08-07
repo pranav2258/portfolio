@@ -19,8 +19,8 @@ jobs:
       - name: Setup Node, Install, Build, and Upload
         uses: withastro/action@v3
         with:
-          path: .
-          node-version: 20
+          site: 'https://pranav2258.github.io/portfolio'
+          base: '/portfolio'
 
   deploy:
     needs: build
